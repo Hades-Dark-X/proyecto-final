@@ -16,7 +16,11 @@ export const Perfil= ()=>{
               <p>Fecha de creación: {new Date(user.createdAt).toLocaleDateString()}</p>
               <p>Última actualización: {new Date(user.updatedAt).toLocaleDateString()}</p>
 
+              <div className=' flex justify-between items-center my-3'>
               <Link to={'/profile/update'} className='bg-indigo-500 px-4 py-1 rounded-sm'>Actualizar Perfil</Link>
+
+              <button className='bg-red-500 px-4 py-1 rounded-sm' >Eliminar cuenta</button>
+              </div>
          </div>
      </div>
   )
