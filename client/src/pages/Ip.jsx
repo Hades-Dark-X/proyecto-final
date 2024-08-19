@@ -29,7 +29,7 @@ export const IpLookup= ()=> {
           value={ip}
           onChange={(e) => setIp(e.target.value)}
           className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' placeholder='Ingresa una IP'/>
-        <button type="submit">Buscar</button>
+        <button type="submit" className='bg-sky -500 px-4 py-1 rounded-sm'>Buscar</button>
       </form>
       
       {data && (
